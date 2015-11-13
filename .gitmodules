@@ -1,0 +1,3 @@
+[submodule "output"]
+	path = output
+	url = ../libdynd.github.io
