@@ -1,3 +1,9 @@
 [submodule "output"]
 	path = output
 	url = ../libdynd.github.io
+[submodule "plugins/ipynb"]
+	path = plugins/ipynb
+	url = https://github.com/danielfrg/pelican-ipynb.git
+[submodule "plugins/page_hierarchy"]
+	path = plugins/page_hierarchy
+	url = https://github.com/akhayyat/pelican-page-hierarchy.git
