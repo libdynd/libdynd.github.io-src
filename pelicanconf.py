@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'DyND Developers'
 SITENAME = u'DyND Multi-Dimensional Array Library'
-SITEURL = ''
+SITEURL = 'http://libdynd.org/'
 
 PATH = 'content'
 
@@ -19,22 +19,20 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+DEFAULT_PAGINATION = 10
 
-DEFAULT_PAGINATION = False
+PLUGINS = ["page_hierarchy", "ipynb"]
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/{slug}.html'
+SLUGIFY_SOURCE = 'basename'
 
-STATIC_PATHS = ['extra/CNAME', 'extra/dynd.ico']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
-                       'extra/dynd.ico': {'path': 'favicon.ico'}}
+STATIC_PATHS = ['CNAME', 'favicon.ico', 'images']
+RELATIVE_URLS = True
+
+MARKUP = ('md', 'ipynb')
+
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
