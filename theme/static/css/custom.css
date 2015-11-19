@@ -1,0 +1,35 @@
+
+.nav {
+	margin: 13px 0 0 0;
+}
+
+.nav ul {
+	padding-top: 10px;
+}
+@media (min-width: 550px) {
+	.nav ul {
+		padding-top: 40px;
+	}
+}
+.nav ul li {
+	display: inline;
+	margin: 0 20px 0 0;
+}
+
+.nav a {
+	text-decoration: none;
+}
+
+.nav a:hover {
+	text-decoration: underline;
+}
+
+.logo300px {
+	float: left;
+	box-sizing: border-box;
+}
+@media (min-width: 550px) {
+	.logo300px {
+		width: 300px;
+	}
+}

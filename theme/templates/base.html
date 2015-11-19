@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>{{ SITENAME }}</title>
+  <meta name="description" content="{{ DESCRIPTION }}">
+  <meta name="author" content="{{ AUTHOR }}">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/skeleton.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ SITEURL }}/images/favicon.png">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo300px">
+	  <img src="{{ SITEURL }}/images/dynd_logo_300px.png"></img>
+	</div>
+	
+	<nav class="nav">
+      <ul>
+        <li><a href="{{ SITEURL }}">Home</a></li>
+        <li><a href="{{ SITEURL }}/introduction">Introduction</a></li>
+        <li><a href="https://github.com/libdynd/libdynd">Development</a></li>
+      </ul>
+	</nav>
+  </div>
+
+  <!-- Primary Page Layout -->
+  {% block content %}
+  {% endblock content %}
+
+<!-- End Document -->
+</body>
+</html>

@@ -27,11 +27,10 @@ PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["page_hierarchy", "ipynb"]
 
 PAGE_URL = '{slug}/'
-PAGE_SAVE_AS = '{slug}/{slug}.html'
+PAGE_SAVE_AS = '{slug}/index.html'
 SLUGIFY_SOURCE = 'basename'
-#PATH_METADATA = 'pages/(?P<path>.*)\..*'
 
-STATIC_PATHS = ['CNAME', 'favicon.ico', 'images']
+STATIC_PATHS = ['CNAME', 'images']
 RELATIVE_URLS = True
 
 MARKUP = ('md', 'ipynb')
