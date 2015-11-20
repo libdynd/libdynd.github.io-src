@@ -1,4 +1,5 @@
-Title: Introduction to DyND
+title: Introduction
+heading: Introduction to DyND
 
 DyND is C++ library for dynamic, multidimensional arrays, aiming to
 target C++, Python, and eventually other languages in a first class

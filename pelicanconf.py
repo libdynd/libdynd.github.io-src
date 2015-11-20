@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'DyND Developers'
-SITENAME = u'DyND Multi-Dimensional Array Library'
+SITENAME = u'The DyND Library'
 SITEURL = 'http://libdynd.org'
 
 PATH = 'content'
@@ -30,6 +30,7 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 SLUGIFY_SOURCE = 'basename'
 
+DIRECT_TEMPLATES = []
 STATIC_PATHS = ['CNAME', 'images']
 RELATIVE_URLS = True
 

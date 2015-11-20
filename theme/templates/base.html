@@ -4,7 +4,9 @@
 
   <!-- Basic Page Needs -->
   <meta charset="utf-8">
+  {% block title %}
   <title>{{ SITENAME }}</title>
+  {% endblock title %}
   <meta name="description" content="{{ DESCRIPTION }}">
   <meta name="author" content="{{ AUTHOR }}">
 
@@ -27,7 +29,7 @@
 
   <div class="container">
     <div class="logo300px">
-	  <img src="{{ SITEURL }}/images/dynd_logo_300px.png"></img>
+	  <a href="{{ SITEURL }}"><img src="{{ SITEURL }}/images/dynd_logo_300px.png"></img></a>
 	</div>
 	
 	<nav class="nav">
